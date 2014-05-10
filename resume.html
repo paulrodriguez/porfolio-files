@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Resume</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script type="text/javascript" src="scripts/jquery.min.js">
+		</script>
+		<script type="text/javascript" src="scripts/menu.js"></script>
+		<script type="text/javascript" src="scripts/tabs.js"></script>
+		<script type="text/javascript">
+			window.onload = function() {
+			format_css_off = {'background': 	'linear-gradient(to bottom, #858585,#AAAAAA, #6A6A6A)', 'color': 'black'};
+				format_css_on = {'background': 'linear-gradient(to bottom, #FFFF80, #FFFF99, #CCCC66)',
+				
+				'color': 'black'};
+				var t = new Tabs(document.getElementById("tab"), document.getElementById("tab_content"),"span", format_css_on, format_css_off);
+				
+				var t = new Menu("resume", "menu");
+			}
+			</script>
+	</head>
+	<body>
+	<div id="content" class="resume">
+		
+			<div id="menu">
+				<a class="about" href="index.html"><img src="css/about.jpg" /></a>
+				<a class="resume" href="resume.html"><img src="css/resume.jpg" /></a>
+				<a class="contact" href="contact.html"><img src="css/contact.jpg" /></a>
+			</div>
+			<br />
+			<div id="inContent">
+			
+				<div id="tab">
+					<span class="0">EDUCATION</span>
+					<span class="1">PROJECTS</span>
+					<span class="2">TECHNICAL SKILLS</span>
+					<span class="3">EMPLOYMENT</span>
+				</div>
+				<div id="tab_content">
+				<br />
+					<div class="active">
+						<h1>EDUCATION</h1>
+						<p>University of California, Los Angeles<span class="goRight">2008-2013</span></p>
+						<p>Bachelor's of Science, Mathematics of Computation<span class="goRight">Degree Awarded</span></p>
+					</div><!--END OF A TAB-->
+				
+					<div>
+						<h1>PROJECTS</h1>
+						<ul>
+							<li>Billiards Game 
+								<ul>
+									<li>This project was for a Computer Graphics class at the University of California-Los Angeles.</li>
+									<li>Worked with two other classmates to develop a billiards game using physics such as elastic collision, friction, velocity, acceleration to move the objects and check for collision.</li>
+									<li>applied computer graphics skills used where shading, lightning and 3 dimensional movement of the camera to give a view of a real life environment.</li>
+								</ul>
+							</li>
+							<li>
+								Movie Rating Site
+								<ul>
+									<li>Developed a Movie Rating site utilizing PHP, JavaScript(JQuery), HTML and CSS for a Computer Science class project at the University of California-Los Angeles.</li>
+									<li>Website allowed users to view details for movies and actors, as well as add search using a search box and add a review to a specific movie.</li>
+									<li>Applied the MVC architectural pattern to separate the logic, business and view into three components to increase robustness and clean code.</li>
+									<li>Applied AJAX techniques to reduce full page load for movies and actors, and instead obtain their information from the database and display it.</li>
+								</ul>
+							</li>
+							<li>
+								Ebay Item Search Site
+								<ul>
+									<li>
+										Architected a site with a fellow classmate for a Computer Science class project at the University of California-Los Angeles through Apache Tomcat, RESTful and SOAP web services.
+									</li>
+									<li>
+										Made use of Lucene and SOAP services to obtain database items and display them to the user.
+									</li>
+									<li>
+										Implemented website desing using JSP, HTML and CSS for both Desktop and Mobile Users.
+									</li>
+									<li>
+										Programmed a proxy server with Java Servlets to obtain Google Search data from the site's search query and used that data to obtain relevant items from database and display the list to the user.
+									</li>
+									<li>
+										Worked with Google Maps API to obtain location of Ebay items seller and an appropriate message depending on location correctness.
+									</li>
+									<li>
+										Processed mock orders through SSL protocol and prevented users from buying through unsafe URLs.
+									</li>
+								</ul>
+							</li>
+							<li>
+							Video Game Store-Game Addict(in progress)
+								<ul>
+									<li>
+										Planning to create a website using cakePHP and basic web design skills for users to buy items.
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div><!--END OF TAB-->
+				
+				
+					<div>
+						<h1>TECHNICAL SKILLS</h1>
+						<p></p>
+						<div class="col2">
+							<p class="skill_category">Language Skills</p>
+							<table>
+								<tr>
+									<td class="border_right">PHP(2+ years)</td>
+									<td>Advanced</td>
+								</tr>
+									
+								<tr>
+									<td class="border_right">HTML(2+ years)</td>
+									<td>Advanced</td>
+								</tr>
+								
+								<tr>
+									<td class="border_right">HTML5(1+ year)</td>
+									<td>Skilled</td>
+								</tr>
+								<tr>
+									<td class="border_right">CSS(2+ years)</td>
+									<td>Advanced</td>
+								</tr>
+								
+								<tr>
+									<td class="border_right">CSS3(1+ years)</td>
+									<td>Skilled</td>
+								</tr>
+								<tr>
+									<td class="border_right">JavaScript(2+ years)</td>
+									<td>Advanced</td>
+								</tr>
+								<tr>
+									<td class="border_right">JQuery(1+ years)</td>
+									<td>Skilled</td>
+								</tr>
+								<tr>
+									<td class="border_right">C++(4+ years)</td>
+									<td>Advanced</td>
+								</tr>
+								<tr>
+									<td class="border_right">Java(2+ years)</td>
+									<td>Advanced</td>
+								</tr>
+								<tr>
+									<td class="border_right">APIs(1+ years)</td>
+									<td>Skilled</td>
+								</tr>
+								<tr>
+									<td class="border_right">Java Servlets(1 &lt; year)</td>
+									<td>Skilled</td>
+								</tr>
+								<tr>
+									<td class="border_right">JSP( 1 &lt; year)</td>
+									<td>Skilled</td>
+								</tr>
+								<tr>
+									<td class="border_right">Python(1+ year)</td>
+									<td>Advanced</td>
+								</tr>
+								<tr>
+									<td class="border_right">Ruby(1+ year)</td>
+									<td>Skilled</td>
+								</tr>
+								<tr>
+									<td class="border_right">JSP(1 &lt; year)</td>
+									<td>Skilled</td>
+								</tr>
+							</table>
+						</div>
+							<div class="col2">
+								<p class="skill_category">Computer Programs</p>
+								<table>
+									<tr>
+										<td class="border_right">Word(5+ years)</td>
+										<td>Advanced</td>
+									</tr>
+									<tr>
+										<td class="border_right">Excel(5+ years)</td>
+										<td>Skilled</td>
+									</tr>
+									<tr>
+										<td class="border_right">PowerPoint(5+ years)</td>
+										<td>Skilled</td>
+									</tr>
+								</table>
+								<p class="skill_category">Frameworks</p>
+								<table>
+									<tr>
+										<td class="border_right">Ruby on Rails(1 &lt; year)</td>
+										<td>Beginner</td>
+									</tr>
+									<tr>
+										<td class="border_right">cakePHP(1 &lt; year)</td>
+										<td>Beginner</td>
+									</tr>
+								</table>
+							</div>
+					</div>
+					<!--END OF A TAB-->
+				
+				
+					<div>
+						<h1>EMPLOYMENT</h1>
+						<p></p>
+						<div>
+							<span>The Style Manor</span><span class="goRight">May 2012-Jan 2013</span>
+						</div>
+						<p>
+							<span class="block">Web Developer Intern (Documented)</span>
+							<ul>
+								<li>Worked directly with CEO to architect and launch new website design</li> <li>Lead role for website design and new store User Interface utilizing PHP, JavaScript(JQuery), HTML and CSS to increase user traffic.</li>
+								<li>Increased product sales after new website design by about 25%.</li>
+								<li>Worked with other employees of different skill sets to meet the demands of CEO and appeal to a bigger range of customers.</li>
+							</ul>
+						</p>
+					</div><!-- END OF A TAB-->
+				</div>
+			</div>
+	</div>
+	</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--Paul Rodriguez-->
+<html>
+<head>
+<script type="text/javascript">
+
+var areagrid = {rows:20,cols:10};
+var blocksize = 20;
+var canvas = {width:blocksize*areagrid.cols, height:blocksize*areagrid.rows};
+
+	
+	
+
+</script>
+<style>
+#html, body{overflow-x:hidden}
+#mycanvas{border:solid 1px black;float:left}
+#start-game p{text-align:center}
+</style>
+</head>
+<body>
+<div style="position:relative;width:440px;margin:0 auto">
+<canvas id="mycanvas">
+</canvas>
+
+<img src="controls2.jpg" width="200px" height="150px"/>
+<div id="start-game"><p>press SPACE to start</p></div>
+<div id="points"></div>
+
+</div>
+</body>
+<script type="text/javascript" src="tetris.js"></script>
+</html>

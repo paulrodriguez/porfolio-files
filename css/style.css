@@ -1,88 +1,377 @@
-#content{
-width:900px; 
-margin:0 auto;
-
-background: -webkit-linear-gradient(top, 	#FFFACD, #FFFBD7, 	#FFFAD2);
-background: -o-linear-gradient(top, 	#FFFACD, #FFFBD7, 	#FFFAD2);
-background: -moz-linear-gradient(top, 	#FFFACD, #FFFBD7, 	#FFFAD2);
-background: linear-gradient(to bottom, 	#FFFACD, #FFFBD7, 	#FFFAD2);
-
+/* line 1, ../sass/style.scss */
+body {
+  background: #000000;
+  margin: 0 8px;
 }
 
-body {
+/* line 6, ../sass/style.scss */
+.mobile-only {
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  /* line 6, ../sass/style.scss */
+  .mobile-only {
+    display: block;
+  }
+}
 
-background: #000000;
+/* line 13, ../sass/style.scss */
+.no-overflow {
+  overflow: hidden;
+}
 
+/* line 17, ../sass/style.scss */
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 22, ../sass/style.scss */
+#content {
+  background: -webkit-linear-gradient(top, #FFFACD, #FFFBD7, #FFFAD2);
+  background: -o-linear-gradient(top, #FFFACD, #FFFBD7, #FFFAD2);
+  background: -moz-linear-gradient(top, #FFFACD, #FFFBD7, #FFFAD2);
+  background: linear-gradient(to bottom, #FFFACD, #FFFBD7, #FFFAD2);
+  padding: 1em 0 0 0;
+}
+
+/*a:hover { cursor:url('aero-x-large-middle-finger-2.cur'), pointer; }*/
+/* line 31, ../sass/style.scss */
+li.mobile-only.close-menu-li {
+  background: #fff;
+  text-align: left;
+  width: 100%;
+}
+
+/* line 39, ../sass/style.scss */
+.navigation-links {
+  width: 100%;
+  display: inline-block;
+}
+/* line 42, ../sass/style.scss */
+.navigation-links .menu {
+  font-size: 50pt;
+  color: white;
+}
+/* line 46, ../sass/style.scss */
+.navigation-links ul {
+  list-style: none;
+  float: left;
+  width: 100%;
+  padding: 0;
+}
+@media only screen and (max-width: 767px) {
+  /* line 46, ../sass/style.scss */
+  .navigation-links ul {
+    position: fixed;
+    right: 100%;
+    -o-transition: right 1s;
+    -moz-transition: right 1s;
+    -webkit-transition: right 1s;
+    transition: right 1s;
+    top: 0;
+    margin: 0;
+    background: #fff;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 63, ../sass/style.scss */
+  .navigation-links ul.active {
+    right: 0;
+    overflow-y: auto;
+    height: 100%;
+  }
+}
+/* line 70, ../sass/style.scss */
+.navigation-links ul li {
+  float: left;
+  width: 33%;
+  text-align: center;
+  padding: 0;
+}
+@media only screen and (max-width: 767px) {
+  /* line 70, ../sass/style.scss */
+  .navigation-links ul li {
+    float: none;
+    padding: 0 0 2em 0;
+  }
+}
+/* line 82, ../sass/style.scss */
+.navigation-links ul li i {
+  font-size: 90pt;
+}
+/* line 85, ../sass/style.scss */
+.navigation-links ul li i.fa-times-circle {
+  font-size: 40px;
+  color: #242023;
+  margin: 0.3em 0 0 0.3em;
+  cursor: pointer;
+  /*-o-transition: font-size 0.5s;
+  -moz-transition: font-size 0.5s;
+  -webkit-transition: font-size 0.5s;
+  transition: font-size 0.5s;*/
+}
+/* line 94, ../sass/style.scss */
+.navigation-links ul li i.fa-times-circle:hover {
+  font-size: 44px;
+}
+/* line 99, ../sass/style.scss */
+.navigation-links ul li i.fa-user {
+  color: #FFA500;
+}
+/* line 102, ../sass/style.scss */
+.navigation-links ul li i.fa-briefcase {
+  color: #631E07;
+}
+/* line 105, ../sass/style.scss */
+.navigation-links ul li i.fa-file-text {
+  color: #009688;
+}
+/* line 109, ../sass/style.scss */
+.navigation-links ul li div {
+  color: white;
+}
+/* line 111, ../sass/style.scss */
+.navigation-links ul li div.about-me {
+  color: #FFA500;
+}
+/* line 114, ../sass/style.scss */
+.navigation-links ul li div.resume {
+  color: #009688;
+}
+/* line 117, ../sass/style.scss */
+.navigation-links ul li div.portfolio {
+  color: #631E07;
+}
+/* line 121, ../sass/style.scss */
+.navigation-links ul li a.nav-link {
+  text-decoration: none;
+  font-size: 18pt;
+}
+
+/* line 128, ../sass/style.scss */
+div.link-container {
+  display: inline-block;
+  padding: 10px 5px;
+}
+/* line 130, ../sass/style.scss */
+div.link-container > a {
+  color: white;
+  text-decoration: none;
+}
+/* line 132, ../sass/style.scss */
+div.link-container > a:hover {
+  color: #FFFF94;
+}
+/* line 136, ../sass/style.scss */
+div.link-container > a > i {
+  font-size: 90pt;
+}
+/* line 140, ../sass/style.scss */
+div.link-container > a > div {
+  text-align: center;
+  font-size: 15pt;
+}
+
+/* line 147, ../sass/style.scss */
+#content #footer {
+  background: black;
+  font-size: 1.34em;
+  color: white;
 }
 
 /**index.html,contact.html**/
-#inContent{
-margin-top: 10px;
-width:100%;
-
-background: -webkit-linear-gradient(top, 	#FFFACD, #FFFBD7, 	#FFFAD2);
-background: -o-linear-gradient(top, 	#FFFACD, #FFFBD7, 	#FFFAD2);
-background: -moz-linear-gradient(top, 	#FFFACD, #FFFBD7, 	#FFFAD2);
-background: linear-gradient(to bottom, 	#FFFACD, #FFFBD7, 	#FFFAD2);
-
-box-shadow: 10px 10px 5px #141414;
- -moz-box-shadow: 10px 10px 5px #141414;
- -webkit-box-shadow: 10px 10px 5px #141414;
+/* line 156, ../sass/style.scss */
+#inContent {
+  height: 100%;
+  margin-top: 10px;
+  width: 100%;
+  background: -webkit-linear-gradient(top, #FFFACD, #FFFBD7, #FFFAD2);
+  background: -o-linear-gradient(top, #FFFACD, #FFFBD7, #FFFAD2);
+  background: -moz-linear-gradient(top, #FFFACD, #FFFBD7, #FFFAD2);
+  background: linear-gradient(to bottom, #FFFACD, #FFFBD7, #FFFAD2);
+  /*box-shadow: 10px 10px 5px #141414;
+   -moz-box-shadow: 10px 10px 5px #141414;
+   -webkit-box-shadow: 10px 10px 5px #141414;*/
 }
+
+/* line 170, ../sass/style.scss */
 #inContent h1 {
-width:90%;
-margin:0 auto;
-background-color:	#181818;
- color:yellow;
- text-align:center;
- border: solid 1px #101010;
- border-radius: 0.5em;
- -webkit-border-radius: 0.5em;
- -moz-border-radius: 0.5em;
- box-shadow: 10px 10px 5px #888888;
- -moz-box-shadow: 10px 10px 5px #888888;
- -webkit-box-shadow: 10px 10px 5px #888888;
- }
-#inContent .des {font-size:2em}
+  width: 90%;
+  margin: 0 auto;
+  background-color: #181818;
+  color: yellow;
+  text-align: center;
+  border: solid 1px #101010;
+  border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  /*box-shadow: 10px 10px 5px #888888;
+  -moz-box-shadow: 10px 10px 5px #888888;
+  -webkit-box-shadow: 10px 10px 5px #888888;*/
+}
+
+/* line 184, ../sass/style.scss */
+#inContent .des {
+  font-size: 2em;
+}
 
 /***resume.html**/
+/* line 187, ../sass/style.scss */
+.skills-table tr td {
+  padding-bottom: 10px;
+}
+
+/* line 191, ../sass/style.scss */
 #inContent #tab {
-margin-left:50px;
+  margin-left: 50px;
 }
 
+/* line 195, ../sass/style.scss */
 #inContent #tab > span {
-
-cursor: pointer; 
-border: solid  1px #333333;
-border-radius: 25px;
--webkit-border-radius: 25px;
--moz-border-radius: 25px;
-font-size: 1.34em;
-
-background: 	-webkit-linear-gradient(top, #858585,#AAAAAA, #6A6A6A);
-background: 	-moz-linear-gradient(top, #858585,#AAAAAA, #6A6A6A);
-background: 	-o-linear-gradient(top, #858585,#AAAAAA, #6A6A6A);
-background: 	linear-gradient(to bottom, #858585,#AAAAAA, #6A6A6A);
-
+  /*cursor: pointer; */
+  cursor: pointer;
+  border: solid  1px #333333;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  font-size: 1.34em;
+  background: -webkit-linear-gradient(top, #858585, #AAAAAA, #6A6A6A);
+  background: -moz-linear-gradient(top, #858585, #AAAAAA, #6A6A6A);
+  background: -o-linear-gradient(top, #858585, #AAAAAA, #6A6A6A);
+  background: linear-gradient(to bottom, #858585, #AAAAAA, #6A6A6A);
 }
-#inContetent #tab_content > div{margin-top: 10px;}
-#inContent #tab_content > div .skill_category{text-decoration: underline; margin-left:10px; display:block;}
-#inContent #tab_content > div .skill{margin-left:20px;display:block}
-#inContent #tab_content > div .col2 {width:47%; display:inline-block;  vertical-align:top}
-#inContent #tab_content > div {font-size:1.5em;width:100%;}
-#inContent table {margin-left: 20px}
-#inContent table .border_right {width: 250px; margin: 0 auto}
-#inContent #tab_content > div span.goRight{float:right;margin-right:5px}
-#inContent #tab_content > div span.block{display:block; margin-left:5px}
-#inContent #tab_content > div p, #inContent .res div{margin-left:5px}
+
+/* line 211, ../sass/style.scss */
+#inContetent #tab_content > div {
+  margin-top: 10px;
+}
+
+/* line 212, ../sass/style.scss */
+#inContent #tab_content > div .skill_category {
+  text-decoration: underline;
+  margin-left: 10px;
+  display: block;
+}
+
+/* line 213, ../sass/style.scss */
+#inContent #tab_content > div .skill {
+  margin-left: 20px;
+  display: block;
+}
+
+/* line 214, ../sass/style.scss */
+#inContent #tab_content > div .col2 {
+  width: 47%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* line 215, ../sass/style.scss */
+#inContent #tab_content > div {
+  font-size: 1.5em;
+  width: 100%;
+}
+
+/* line 216, ../sass/style.scss */
+#inContent table {
+  margin-left: 20px;
+}
+
+/* line 217, ../sass/style.scss */
+#inContent table .border_right {
+  width: 250px;
+  margin: 0 auto;
+}
+
+/* line 218, ../sass/style.scss */
+#inContent #tab_content > div span.goRight {
+  float: right;
+  margin-right: 5px;
+}
+
+/* line 219, ../sass/style.scss */
+#inContent #tab_content > div span.block {
+  display: block;
+  margin-left: 5px;
+}
+
+/* line 220, ../sass/style.scss */
+#inContent #tab_content > div p, #inContent .res div {
+  margin-left: 5px;
+}
 
 /**menu style*/
+/* line 224, ../sass/style.scss */
+#menu {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  background-color: black;
+}
 
-#menu{width:100%;margin:0 auto; padding:0;background-color:black}
-#menu a{margin-right:-3px;padding:0;position:relative}
-#menu a img{margin-bottom:-3.5px;}
+/* line 225, ../sass/style.scss */
+#menu a {
+  margin-right: -3px;
+  padding: 0;
+  position: relative;
+}
+
+/* line 226, ../sass/style.scss */
+#menu a img {
+  margin-bottom: -3.5px;
+}
 
 /**tab.html style*/
-div#tabcontent div{position:absolute;background-color:azure;width:900px}
+/* line 229, ../sass/style.scss */
+div#tabcontent div {
+  position: absolute;
+  background-color: azure;
+  width: 900px;
+}
 
-div#tab span{padding-left:4px; padding-right:4px;border-left:solid 0.2em;border-right:solid 0.2em}
+/* line 231, ../sass/style.scss */
+div#tab span {
+  padding-left: 4px;
+  padding-right: 4px;
+  border-left: solid 0.2em;
+  border-right: solid 0.2em;
+}
+
+/**portfolio.html**/
+/* line 235, ../sass/style.scss */
+.portfolio {
+  text-align: center;
+}
+/* line 237, ../sass/style.scss */
+.portfolio .portfolio-links {
+  width: 90%;
+  display: inline-block;
+}
+/* line 240, ../sass/style.scss */
+.portfolio .portfolio-links .portfolio-link-wrapper {
+  display: inline-block;
+  width: 45%;
+  text-align: center;
+  margin: 0.5em 0;
+  background-color: #000000;
+  padding: 0.5em 0;
+  font-size: 1.4em;
+}
+@media only screen and (max-width: 767px) {
+  /* line 240, ../sass/style.scss */
+  .portfolio .portfolio-links .portfolio-link-wrapper {
+    width: 100%;
+  }
+}
+/* line 251, ../sass/style.scss */
+.portfolio .portfolio-links .portfolio-link-wrapper a {
+  cursor: pointer;
+  color: #FFFF00;
+  text-decoration: none;
+  display: block;
+}
+/* line 256, ../sass/style.scss */
+.portfolio .portfolio-links .portfolio-link-wrapper a:hover {
+  color: #FFFF80;
+}

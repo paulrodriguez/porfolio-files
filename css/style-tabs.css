@@ -32,7 +32,8 @@ margin-left:50px;
 
 #inContent #tab > span {
 display:inline-block;
-cursor: pointer; 
+/*cursor: pointer; */
+cursor:url('aero-x-large-middle-finger-2.cur'), pointer;
 border: solid  1px 		#999900;
 margin:0px;
 padding:0px;

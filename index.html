@@ -1,43 +1,78 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 	<head>
-		<title>My Portfolio</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="description" content="This is my portfolio about my work and myself" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Paul D. Rodriguez | Web Developer</title>
+		    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-77673012-1', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+    <link rel="canonical" href="http://pauldrodriguez.com/" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<script type="text/javascript" src="scripts/jquery.min.js"></script>
-		<script type="text/javascript" src="scripts/menu.js">
-		</script>
+		<link rel="stylesheet" type="text/css" href="css/font_awesome/css/font-awesome.css" />
+		<script defer type="text/javascript" src="scripts/jquery-1.12.3.min.js"></script>
+		<script defer type="text/javascript" src="scripts/menu.js"></script>
+		<!--<script defer type="text/javascript" src="scripts/home.js"></script>-->
 		<script type="text/javascript">
 			window.onload = function() {
-				var t = new Menu("about", "menu");
+			//	var t = new Menu("about", "menu");
 			}
 		</script>
 	</head>
 	<body>
-		<div id="content" class="about">
-			<div id="menu">
-			
-					<a class="about" href="."><img src="css/about.jpg" /></a>
-					<a class="resume" href="resume.html"><img src="css/resume.jpg" /></a>
-					<a class="contact" href="contact.html"><img src="css/contact.jpg" /></a>
-			
-			</div>
+	<header class="container">
+      <nav class="navigation-links">
+      <div class="mobile-only menu"><i class="fa fa-bars" aria-hidden="true"></i></div>
+        <ul id="nav-link-list">
+          <li class="mobile-only close-menu-li">
+          <i class="fa fa-times-circle close-menu" aria-hidden="true"></i>
+          </li>
+          <li>
+            <a class="about nav-link" href="index.html">
+            <i class="fa fa-user"></i><div class="about-me">About Me</div>
+            </a>
+          </li>
+          <li>
+            <a class="resume nav-link" href="resume.html" >
+              <i class="fa fa-file-text"></i><div class="resume">Resume</div>
+            </a>
+          </li>
+          <li>
+            <a class="portfolio nav-link" href="portfolio.html">
+              <i class="fa fa-briefcase"></i><div class="portfolio">Portfolio</div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+		<div id="content" class="about container">
 			<div id="inContent">
 				<!--h1 causes a lot of margin from the menu-->
 				<h1>ABOUT ME</h1>
 				<div class="des">
-					<p></p>
-					I am a programmer/Web Developer in the Los Angeles area.  My areas of focus are developing website designs from image templates, building applications for SQL database retrieval, designing databases, and maintaining the overall applications of websites. <br />
-					I am a self learner, and I have taught myself most of the Web Development programming languages and technologies that I know so far.<br />
-					I may not have much work experience but I have done some projects that have come out well, and they are all stored in my github account(I will give out upon request).  If you are looking for someone with a lot of work experience(4+ years) and be an expert in every CMS, framework and other tools that contribute little to productivity, then please look elsewhere unless are willing to train people with little experience.  I am willing to do a couple of day's work for free(about a week) so clients can determine if I am fit for this position.  Those days do not have to be paid whether I am hired or not. 
+					<!--<p></p>-->
+					I am a Programmer/Web Developer in the Los Angeles area with over two years of experience, primarily focusing on building web applications using HTML, CSS, PHP, MySQL, JavaScript and the LAMP stack.
+					I have worked on a variety of websites for different types of businesses as a team and individually,
+					so I can always adapt to any work environment.
+					I like learning new technologies for the web as it helps to improve my skillset and compare the different technologies available to choose the best platform that will deliver fast and reliable results for any type of project.
 				</div>
 				<h1>GOALS</h1>
 					<div class="des">
-						<p></p>
-						I want to learn more about programming and creating web applications for people to use.<br />
-						My current goals are to learn Ruby/Ruby on Rails, Andriod/iOS App Development, deploying applications to the internet from home, and basically everything that I can to improve my skills on web development and web applications.
+					  Learn.<br />
+						Continue learning more about the LAMP stack, gain more experience in server administration tasks and frontend development.
+						I would like to start learning mobile development soon as mobile users have been rising within the past few years.
 					</div>
 			</div>
+			<div id="footer">Copyright &copy; 2014 Paul Rodriguez</div>
 		</div>
 		
 	</body>

@@ -49,10 +49,10 @@ Tabs.prototype.clickTab = function(eClicked) {
 	var cssSelector = "#"+this.content.id+"> div.active";  //  get the current active div
 	//console.log(cssSelector);
 	var divPos = parseInt(eClicked.className);  //  the links should have numbers as class names
-	console.log("div pos: " + divPos + "|| active_tab_id: "+oThis.active_tab_id);
+	//console.log("div pos: " + divPos + "|| active_tab_id: "+oThis.active_tab_id);
 	var children = document.querySelectorAll("#"+oThis.content.id+">div");  // get the div for the link clicked
 	//if(divPos<children.length && divPos != oThis.active_tab_id) {
-	var hide_and_show = function() {
+	//var hide_and_show = function() {
 		$(cssSelector).stop(false, true).slideUp("slow", 
 			function (){
 				
@@ -67,25 +67,28 @@ Tabs.prototype.clickTab = function(eClicked) {
 					});
 				//newActiveTab.className="active";
 			});
-	}
+	//}
 	
 	//dont know how useful this is
-	$.when(hide_and_show());
-	//}
+	
+		/*$.when(function() {
+			return divPos != oThis.active_tab_id;
+		}).then(hide_and_show());
+	*/
 	
 }
 
 //  initialize everything
 Tabs.prototype.init = function() {
 	var oThis = this;
-	//var t = "background-color";
+	
 	$(this.links.getElementsByTagName(this.linksElementName)[0]).css(oThis.format_css_on);
 	
 	this.currActiveTab = this.links.getElementsByTagName(this.linksElementName)[0];
 	//console.log(document.querySelectorAll('#tabcontent>div'));
 	var directChildren = document.querySelectorAll("#"+this.content.id+">div");
 	for (var i = 0; i < directChildren.length;i++) {
-		console.log("class names: " + directChildren[i].className);
+		//console.log("class names: " + directChildren[i].className);
 		 if (directChildren[i].className == "active") {
 			oThis.active_tab_id = i;
 			$(directChildren[i]).show();
@@ -94,14 +97,16 @@ Tabs.prototype.init = function() {
 			$(directChildren[i]).hide();
 		 }
 	}
-		
-	$(document.getElementById("tab").getElementsByTagName("span")).click(function() {
+		$("#tab > span").on('click', function() {
+	//$(document.getElementById("tab").getElementsByTagName("span")).click(function() {
 		//  check to see if a tab is sliding one and another one is sliding down so that we wait until those events finish
-		if (!oThis.animating) {
-			//console.log("animating");
+		if (!oThis.animating && parseInt(this.className) != parseInt(oThis.active_tab_id)) {
+		
+			//console.log("animating. class name: " + this.className);
 			oThis.animating = true;
-			if (this.currActiveTab === this) return;
+			//if (this.currActiveTab === this) return;
 			oThis.clickTab(this);
+			
 		}
 	//console.log("element clicked: "+this.className);
 	});

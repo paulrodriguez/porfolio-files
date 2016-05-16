@@ -1,4 +1,15 @@
 
+jQuery(document).ready(function() {
+	jQuery(".menu").on("click",function() {
+		jQuery("#nav-link-list").addClass("active");
+		jQuery("body").addClass("no-overflow");
+	});
+	
+	jQuery(".close-menu").on("click",function() {
+		jQuery("#nav-link-list").removeClass("active");
+		jQuery("body").removeClass("no-overflow");
+	});
+});
 
 function enterImg(all, name) {
 	return "-hover.jpg";
@@ -11,6 +22,11 @@ function outImg(all, name) {
 function activeImg(all,name) {
 	return "-hover.jpg";
 }
+
+/*
+param activePageClass: the class name of the active link for the specific page
+param menuId: the id of the navigation bar enclosing the links
+*/
 function Menu(activePageClass, menuId) {
 	this.activePageClass = activePageClass; 
 	this.menuId = menuId;

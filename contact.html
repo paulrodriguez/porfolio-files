@@ -1,32 +1,57 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<title>Contact Me</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/font_awesome/css/font-awesome.css" />
 		<script type="text/javascript" src="scripts/jquery.min.js"></script>
 		<script type="text/javascript" src="scripts/menu.js"></script>
 		<script type="text/javascript">
 			window.onload = function() {
-				var t = new Menu("contact", "menu");
+				//var t = new Menu("contact", "menu");
 			}
 		</script>
 	</head>
 	<body>
+	<header class="container">
+      <nav class="navigation-links">
+      <div class="mobile-only menu"><i class="fa fa-bars" aria-hidden="true"></i></div>
+        <ul id="nav-link-list">
+          <li class="mobile-only close-menu-li">
+          <i class="fa fa-times-circle close-menu" aria-hidden="true"></i>
+          </li>
+          <li>
+            <a class="about nav-link" href="index.html">
+            <i class="fa fa-user"></i><div class="about-me">About Me</div>
+            </a>
+          </li>
+          <li>
+            <a class="resume nav-link" href="resume.html" >
+              <i class="fa fa-file-text"></i><div class="resume">Resume</div>
+            </a>
+          </li>
+          <li>
+            <a class="portfolio nav-link" href="portfolio.html">
+              <i class="fa fa-briefcase"></i><div class="portfolio">Portfolio</div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 	<div id="content" class="contact">
-			<div id="menu">
-				<a class="about" href="index.html"><img src="css/about.jpg" /></a>
-				<a class="resume" href="resume.html"><img src="css/resume.jpg" /></a>
-				<a class="contact" href="contact.html"><img src="css/contact.jpg" /></a>
-			</div>
-			<div id="inContent">
-				<h1>KEEP IN TOUCH</h1>
-				<div class="des">
-					<p></p>
-					<span>
-						If you are seeing this page, that is because I probably gave you a link and thus you are a recruiter or a friend.  If you are a recruiter, then you should already have my contact information.  If you are a friend, then you also should have my contact information.
-					</span>
-				</div>
+		<div id="inContent">
+			<h1>KEEP IN TOUCH</h1>
+			<div class="des">
+				<p></p>
+				<span>
+					If you are seeing this page, that is because I probably gave you a link and thus you are a recruiter or a friend.  If you are a recruiter, then you should already have my contact information.  If you are a friend, then you also should have my contact information.
+				</span>
 			</div>
 		</div>
+		<div id="footer">Copyright &copy; 2014 Paul Rodriguez</div>
+	</div>
 	</body>
 </html>

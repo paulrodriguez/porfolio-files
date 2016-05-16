@@ -1,0 +1,262 @@
+body {
+  background: #000000;
+  margin: 0 8px;
+}
+
+.mobile-only {
+  display:none;
+  @media only screen and (max-width:767px) {
+    display:block;
+  }
+}
+
+.no-overflow {
+  overflow: hidden;
+}
+
+.container {
+  width:100%;
+  margin:0 auto;
+}
+
+#content {
+  background: -webkit-linear-gradient(top, 	#FFFACD, #FFFBD7, 	#FFFAD2);
+  background: -o-linear-gradient(top, 	#FFFACD, #FFFBD7, 	#FFFAD2);
+  background: -moz-linear-gradient(top, 	#FFFACD, #FFFBD7, 	#FFFAD2);
+  background: linear-gradient(to bottom, 	#FFFACD, #FFFBD7, 	#FFFAD2);
+  padding: 1em 0 0 0;
+}
+
+/*a:hover { cursor:url('aero-x-large-middle-finger-2.cur'), pointer; }*/
+li.mobile-only.close-menu-li {
+        background:#fff;
+        text-align:left;
+        width:100%;
+        &:hover {
+          
+        }
+}
+.navigation-links {
+  width:100%;
+  display:inline-block;
+  .menu {
+    font-size:50pt;
+    color:white;
+  }
+  ul {
+    list-style:none;
+    float:left;
+    width:100%;
+    padding:0;
+    @media only screen and (max-width:767px) {
+      position:fixed;
+      right: 100%;
+      -o-transition:right 1s;
+      -moz-transition: right 1s;
+      -webkit-transition: right 1s;
+      transition: right 1s;
+      top:0;
+      margin: 0;
+      background:#fff;
+      
+    }
+    &.active {
+      @media only screen and (max-width:767px) {
+        right:0;
+        overflow-y:auto;
+        height:100%;
+      }
+    }
+    li {
+      float:left;
+      width:33%;
+      text-align:center;
+      padding:0;
+      @media only screen and (max-width:767px) {
+        float:none;
+        padding: 0 0 2em 0;
+      }
+      
+      
+      
+      i {
+        font-size:90pt;
+        
+        &.fa-times-circle {
+        font-size:40px;
+        color:#242023;
+        margin:0.3em 0 0 0.3em;
+        cursor:pointer;
+        /*-o-transition: font-size 0.5s;
+        -moz-transition: font-size 0.5s;
+        -webkit-transition: font-size 0.5s;
+        transition: font-size 0.5s;*/
+          &:hover {
+            font-size:44px;
+          }
+        }
+        
+        &.fa-user {
+          color: #FFA500;
+        }
+        &.fa-briefcase{
+          color: #631E07;
+        }
+        &.fa-file-text {
+          color: #009688;
+        }
+      }
+      div {
+        color:white;
+        &.about-me {
+          color:#FFA500;
+        }
+        &.resume {
+          color:#009688;
+        }
+        &.portfolio {
+          color:#631E07;
+        }
+      }
+      a.nav-link {
+      text-decoration:none;
+        font-size:18pt;
+      }
+    }
+  }
+}
+div.link-container {
+  display:inline-block;padding:10px 5px;
+  > a {
+    color:white;text-decoration:none;
+    &:hover {
+      color: #FFFF94;
+    }
+    
+    > i {
+      font-size:90pt;
+    }
+    
+    >div {
+      text-align:center;
+      font-size:15pt;
+    }
+  }
+}
+
+#content #footer {
+	background: black;
+	font-size: 1.34em;
+	color: white;
+	
+}
+
+
+/**index.html,contact.html**/
+#inContent{
+height:100%;
+margin-top: 10px;
+width:100%;
+
+background: -webkit-linear-gradient(top, 	#FFFACD, #FFFBD7, 	#FFFAD2);
+background: -o-linear-gradient(top, 	#FFFACD, #FFFBD7, 	#FFFAD2);
+background: -moz-linear-gradient(top, 	#FFFACD, #FFFBD7, 	#FFFAD2);
+background: linear-gradient(to bottom, 	#FFFACD, #FFFBD7, 	#FFFAD2);
+
+/*box-shadow: 10px 10px 5px #141414;
+ -moz-box-shadow: 10px 10px 5px #141414;
+ -webkit-box-shadow: 10px 10px 5px #141414;*/
+}
+#inContent h1 {
+width:90%;
+margin:0 auto;
+background-color:	#181818;
+ color:yellow;
+ text-align:center;
+ border: solid 1px #101010;
+ border-radius: 0.5em;
+ -webkit-border-radius: 0.5em;
+ -moz-border-radius: 0.5em;
+ /*box-shadow: 10px 10px 5px #888888;
+ -moz-box-shadow: 10px 10px 5px #888888;
+ -webkit-box-shadow: 10px 10px 5px #888888;*/
+ }
+#inContent .des {font-size:2em}
+
+/***resume.html**/
+.skills-table tr td {
+	padding-bottom:10px;
+}
+
+#inContent #tab {
+margin-left:50px;
+}
+
+#inContent #tab > span {
+
+/*cursor: pointer; */
+cursor: pointer;
+border: solid  1px #333333;
+border-radius: 25px;
+-webkit-border-radius: 25px;
+-moz-border-radius: 25px;
+font-size: 1.34em;
+
+background: 	-webkit-linear-gradient(top, #858585,#AAAAAA, #6A6A6A);
+background: 	-moz-linear-gradient(top, #858585,#AAAAAA, #6A6A6A);
+background: 	-o-linear-gradient(top, #858585,#AAAAAA, #6A6A6A);
+background: 	linear-gradient(to bottom, #858585,#AAAAAA, #6A6A6A);
+
+}
+#inContetent #tab_content > div{margin-top: 10px;}
+#inContent #tab_content > div .skill_category{text-decoration: underline; margin-left:10px; display:block;}
+#inContent #tab_content > div .skill{margin-left:20px;display:block}
+#inContent #tab_content > div .col2 {width:47%; display:inline-block;  vertical-align:top}
+#inContent #tab_content > div {font-size:1.5em;width:100%;}
+#inContent table {margin-left: 20px}
+#inContent table .border_right {width: 250px; margin: 0 auto}
+#inContent #tab_content > div span.goRight{float:right;margin-right:5px}
+#inContent #tab_content > div span.block{display:block; margin-left:5px}
+#inContent #tab_content > div p, #inContent .res div{margin-left:5px}
+
+/**menu style*/
+
+#menu{width:100%;margin:0 auto; padding:0;background-color:black}
+#menu a{margin-right:-3px;padding:0;position:relative}
+#menu a img{margin-bottom:-3.5px;}
+
+/**tab.html style*/
+div#tabcontent div{position:absolute;background-color:azure;width:900px}
+
+div#tab span{padding-left:4px; padding-right:4px;border-left:solid 0.2em;border-right:solid 0.2em}
+
+
+/**portfolio.html**/
+.portfolio {
+text-align:center;
+  .portfolio-links {
+        width: 90%;
+    display: inline-block;
+    .portfolio-link-wrapper {
+      display: inline-block;
+      width: 45%;
+      text-align: center;
+      margin: 0.5em 0;
+      background-color: #000000;
+      padding: 0.5em 0;
+      font-size: 1.4em;
+      @media only screen and (max-width:767px) {
+        width:100%;
+      }
+      a {
+        cursor:pointer;
+        color:#FFFF00;
+        text-decoration:none;
+        display:block;
+        &:hover {
+          color:#FFFF80;
+        }
+      }
+    }
+  }
+}

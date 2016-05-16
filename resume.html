@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<title>Resume</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<script type="text/javascript" src="scripts/jquery.min.js">
+		<link rel="stylesheet" type="text/css" href="css/font_awesome/css/font-awesome.css" />
+		<script type="text/javascript" src="scripts/jquery-2.1.1.js">
 		</script>
 		<script type="text/javascript" src="scripts/menu.js"></script>
 		<script type="text/javascript" src="scripts/tabs.js"></script>
@@ -15,19 +19,64 @@
 				'color': 'black'};
 				var t = new Tabs(document.getElementById("tab"), document.getElementById("tab_content"),"span", format_css_on, format_css_off);
 				
-				var t = new Menu("resume", "menu");
+				//var t = new Menu("resume", "menu");
 			}
 			</script>
+			
+			<style type="text/css">
+	.rating {
+  unicode-bidi: bidi-override;
+  font-size:20px;
+  
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+span.star-selected {
+   content: "\2605";
+   position:relative;
+   color:gold;
+   left: 0;
+}
+span.star-selected:before {
+	content: "\2605";
+   position:absolute;
+   color:gold;
+   left: 0;
+}
+			</style>
 	</head>
 	<body>
+	<header class="container">
+      <nav class="navigation-links">
+      <div class="mobile-only menu"><i class="fa fa-bars" aria-hidden="true"></i></div>
+        <ul id="nav-link-list">
+          <li class="mobile-only close-menu-li">
+          <i class="fa fa-times-circle close-menu" aria-hidden="true"></i>
+          </li>
+          <li>
+            <a class="about nav-link" href="index.html">
+            <i class="fa fa-user"></i><div class="about-me">About Me</div>
+            </a>
+          </li>
+          <li>
+            <a class="resume nav-link" href="resume.html" >
+              <i class="fa fa-file-text"></i><div class="resume">Resume</div>
+            </a>
+          </li>
+          <li>
+            <a class="portfolio nav-link" href="portfolio.html">
+              <i class="fa fa-briefcase"></i><div class="portfolio">Portfolio</div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 	<div id="content" class="resume">
 		
-			<div id="menu">
-				<a class="about" href="index.html"><img src="css/about.jpg" /></a>
-				<a class="resume" href="resume.html"><img src="css/resume.jpg" /></a>
-				<a class="contact" href="contact.html"><img src="css/contact.jpg" /></a>
-			</div>
-			<br />
+			
 			<div id="inContent">
 			
 				<div id="tab">
@@ -103,97 +152,213 @@
 						<p></p>
 						<div class="col2">
 							<p class="skill_category">Language Skills</p>
-							<table>
+							<table class="skills-table">
 								<tr>
 									<td class="border_right">PHP(2+ years)</td>
-									<td>Advanced</td>
+									<td>
+										<div class="rating">
+											<span class="star-selected">&#9734;</span>
+											<span class="star-selected">&#9734;</span>
+											<span class="star-selected">&#9734;</span>
+											<span class="star-selected">&#9734;</span>
+											<span>&#9734;</span>
+										</div>
+									</td>
 								</tr>
 									
 								<tr>
-									<td class="border_right">HTML(2+ years)</td>
-									<td>Advanced</td>
+									<td class="border_right">HTML/HTML5(2+ years)</td>
+									<td>
+										<div class="rating">
+											<span class="star-selected">&#9734;</span>
+											<span class="star-selected">&#9734;</span>
+											<span class="star-selected">&#9734;</span>
+											<span class="star-selected">&#9734;</span>
+											<span>&#9734;</span>
+										</div>
+									</td>
 								</tr>
 								
-								<tr>
+								<!--<tr>
 									<td class="border_right">HTML5(1+ year)</td>
 									<td>Skilled</td>
-								</tr>
+								</tr>-->
 								<tr>
-									<td class="border_right">CSS(2+ years)</td>
-									<td>Advanced</td>
+									<td class="border_right">CSS/CSS3(2+ years)</td>
+									<td>
+										<div class="rating">
+											<span class="star-selected">&#9734;</span>
+											<span class="star-selected">&#9734;</span>
+											<span class="star-selected">&#9734;</span>
+											<span class="star-selected">&#9734;</span>
+											<span>&#9734;</span>
+										</div>
+									</td>
 								</tr>
 								
-								<tr>
+								<!--<tr>
 									<td class="border_right">CSS3(1+ years)</td>
 									<td>Skilled</td>
-								</tr>
+								</tr>-->
 								<tr>
 									<td class="border_right">JavaScript(2+ years)</td>
-									<td>Advanced</td>
+									<td>
+										<div class="rating">
+											<span class="star-selected">&#9734;</span>
+											<span class="star-selected">&#9734;</span>
+											<span class="star-selected">&#9734;</span>
+											<span>&#9734;</span>
+											<span>&#9734;</span>
+										</div>
+									</td>
 								</tr>
 								<tr>
 									<td class="border_right">JQuery(1+ years)</td>
-									<td>Skilled</td>
+									<td>
+										<div class="rating">
+											<span class="star-selected">&#9734;</span>
+											<span class="star-selected">&#9734;</span>
+											<span class="star-selected">&#9734;</span>
+											<span>&#9734;</span>
+											<span>&#9734;</span>
+										</div>
+									</td>
 								</tr>
 								<tr>
 									<td class="border_right">C++(4+ years)</td>
-									<td>Advanced</td>
+									<td>
+										<div class="rating">
+											<span class="star-selected">&#9734;</span>
+											<span class="star-selected">&#9734;</span>
+											<span class="star-selected">&#9734;</span>
+											<span class="star-selected">&#9734;</span>
+											<span>&#9734;</span>
+										</div>
+									</td>
 								</tr>
 								<tr>
 									<td class="border_right">Java(2+ years)</td>
-									<td>Advanced</td>
+									<td>
+										<div class="rating">
+											<span class="star-selected">&#9734;</span>
+											<span class="star-selected">&#9734;</span>
+											<span class="star-selected">&#9734;</span>
+											<span>&#9734;</span>
+											<span>&#9734;</span>
+										</div>
+									</td>
 								</tr>
 								<tr>
 									<td class="border_right">APIs(1+ years)</td>
-									<td>Skilled</td>
+									<td>
+										<div class="rating">
+											<span class="star-selected">&#9734;</span>
+											<span class="star-selected">&#9734;</span>
+											<span>&#9734;</span>
+											<span>&#9734;</span>
+											<span>&#9734;</span>
+										</div>
+									</td>
 								</tr>
-								<tr>
+								<!--<tr>
 									<td class="border_right">Java Servlets(1 &lt; year)</td>
 									<td>Skilled</td>
 								</tr>
 								<tr>
 									<td class="border_right">JSP( 1 &lt; year)</td>
 									<td>Skilled</td>
-								</tr>
+								</tr>-->
 								<tr>
 									<td class="border_right">Python(1+ year)</td>
-									<td>Advanced</td>
+									<td>
+										<div class="rating">
+											<span class="star-selected">&#9734;</span>
+											<span class="star-selected">&#9734;</span>
+											<span class="star-selected">&#9734;</span>
+											<span>&#9734;</span>
+											<span>&#9734;</span>
+										</div>
+									</td>
 								</tr>
 								<tr>
 									<td class="border_right">Ruby(1+ year)</td>
-									<td>Skilled</td>
-								</tr>
-								<tr>
-									<td class="border_right">JSP(1 &lt; year)</td>
-									<td>Skilled</td>
+									<td>
+										<div class="rating">
+											<span class="star-selected">&#9734;</span>
+											<span class="star-selected">&#9734;</span>
+											<span class="star-selected">&#9734;</span>
+											<span>&#9734;</span>
+											<span>&#9734;</span>
+										</div>
+									</td>
 								</tr>
 							</table>
 						</div>
 							<div class="col2">
 								<p class="skill_category">Computer Programs</p>
-								<table>
+								<table class="skills-table">
 									<tr>
 										<td class="border_right">Word(5+ years)</td>
-										<td>Advanced</td>
+										<td>
+											<div class="rating">
+											<span class="star-selected">&#9734;</span>
+											<span class="star-selected">&#9734;</span>
+											<span class="star-selected">&#9734;</span>
+											<span>&#9734;</span>
+											<span>&#9734;</span>
+										</div>
+										</td>
 									</tr>
 									<tr>
 										<td class="border_right">Excel(5+ years)</td>
-										<td>Skilled</td>
+										<td>
+											<div class="rating">
+											<span class="star-selected">&#9734;</span>
+											<span class="star-selected">&#9734;</span>
+											<span>&#9734;</span>
+											<span>&#9734;</span>
+											<span>&#9734;</span>
+										</div>
+										</td>
 									</tr>
 									<tr>
 										<td class="border_right">PowerPoint(5+ years)</td>
-										<td>Skilled</td>
+										<td>
+											<div class="rating">
+											<span class="star-selected">&#9734;</span>
+											<span class="star-selected">&#9734;</span>
+											<span>&#9734;</span>
+											<span>&#9734;</span>
+											<span>&#9734;</span>
+										</div>
+										</td>
 									</tr>
 								</table>
 								<p class="skill_category">Frameworks</p>
-								<table>
+								<table class="skills-table">
 									<tr>
 										<td class="border_right">Ruby on Rails(1 &lt; year)</td>
-										<td>Beginner</td>
+										<td>
+											<div class="rating">
+											<span class="star-selected">&#9734;</span>
+											<span class="star-selected">&#9734;</span>
+											<span>&#9734;</span>
+											<span>&#9734;</span>
+											<span>&#9734;</span>
+										</div>
+										</td>
 									</tr>
 									<tr>
 										<td class="border_right">cakePHP(1 &lt; year)</td>
-										<td>Beginner</td>
+										<td>
+											<div class="rating">
+											<span class="star-selected">&#9734;</span>
+											<span class="star-selected">&#9734;</span>
+											<span class="star-selected">&#9734;</span>
+											<span>&#9734;</span>
+											<span>&#9734;</span>
+										</div>
+										</td>
 									</tr>
 								</table>
 							</div>
@@ -208,7 +373,7 @@
 							<span>The Style Manor</span><span class="goRight">May 2012-Jan 2013</span>
 						</div>
 						<p>
-							<span class="block">Web Developer Intern (Documented)</span>
+							<span class="block">Web Developer Intern</span>
 							<ul>
 								<li>Worked directly with CEO to architect and launch new website design</li> <li>Lead role for website design and new store User Interface utilizing PHP, JavaScript(JQuery), HTML and CSS to increase user traffic.</li>
 								<li>Increased product sales after new website design by about 25%.</li>
@@ -218,6 +383,7 @@
 					</div><!-- END OF A TAB-->
 				</div>
 			</div>
+		<div id="footer">Copyright &copy; 2014 Paul Rodriguez</div>
 	</div>
 	</body>
 </html>
